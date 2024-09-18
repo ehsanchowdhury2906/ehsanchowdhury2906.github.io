@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan</title>
+</head>
+<body>
+
+    <figure>
+        <img src="https://www.japan.travel/en/us/" alt="Japan Logo" width="10%" height="10%">
+        <img src="<img src="https://img.freepik.com/premium-vector/japan-travel-map-flat-illustration_66675-209.jpg" alt="Japan travel map in flat illustration. Stock Vector | Adobe Stock"/>" alt="Japan Map" width="7%" height="7%" style="float: right;">
+    </figure>
+
+    <hr>
+    <div style="text-align: center;">
+        <h1>Japan</h1>
+    </div>
+    <p><b><i>Japan</b></i> is a land of stark contrasts. In the summer months, the sun doesn't set at all in the northernmost parts of the country. In the winter, the opposite happens, and the sun disappears for months. The white snow, bright moon and stars, and - if you're lucky - the colourful Northern Lights, create a surprisingly light and magical nightscape. It has been recognized as the happiest country in the world for several years running.</p>
+    
+    <div style="background-color: #002F6C; color: blue (255, 255, 255); border: 1px solid yellow; padding-left: 2%;">
+        <h2>Things to do in Japan</h2>
+        <figure>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMX1JhoN_dBd1Y3qvezOM0DS6AAwp11IJK2WNgB=s680-w680-h510-rw" alt="Himeji castle" style="border: solid white;" width="20%" height="20%" title="Northern Lights">
+            <figcaption><i>See Himeji castle in Japan</i>  
+            </figure>Himeji Castle is the largest and most visited castle in Japan, and it was registered in 1993 as one of the first UNESCO World Heritage Sites in the country.        </figure>
+        <figure>
+            
+
+    <h2>Upcoming Events</h2>
+    <ul style="padding-left: 100px;">
+        <li><a href="https://www.songkick.com/metro-areas/30717-japan-tokyo">concerts</a></li>
+        <li><a href="https://www.eventbrite.com/e/aki-matsuri-2024-japanese-fall-festival-tickets-948347000407">aki matsuri</a></li>
+    </ul>
+
+    <hr>
+    <h2>Newsfeed</h2>
+    <p style="display: inline;"><i><b>Japan travel industry calls for offering free passports to 18-yr-olds</i></b><br></p>
+    <p style="margin-left: 4em; margin-top: 0%;">
+        Japanese pizza chain starts nationwide delivery of for-dogs pizzas 
+    </p>
+    <p style="display: inline;"><i><b>Penguin escapes from wildlife exhibit in Japan</i></b><br></p>
+    <p style="margin-left: 4em; margin-top: 0%;">
+        found at beach 45 kilometers away
+    </p>
+    <br>
+
+    <hr>
+    <h2>How Much Does a Japan Trip Cost?</h2>
+    <table style="border: 10px solid Turquoise">
+        <tr style="background-color: #002F6C;;">
+            <td></td>
+            <td><b style="color: white;">Price</b></td>
+        </tr>
+        <tr>
+            <td>Ticket from JFK</td>
+            <td style="background-color: #c8102e; color: purple;">$743</td>
+        </tr>
+        <tr>
+            <td>Hotel for 2 per night</td>
+            <td>$238</td>
+        </tr>
+        <tr>
+            <td>Food per person per day</td>
+            <td>$78</td>
+        </tr>
+        <tr>
+            <td>Attractions and Activities per person</td>
+            <td>$406</td>
+        </tr>
+        <tr style="background-color: #002F6C; color: white;">
+            <td><b>Total Cost per day per person</b></td>
+            <td><b>$698</b></td>
+        </tr>
+    </table>
+    <br>
+
+    <hr>
+    <h2>Contact Us</h2>
+    <div style="padding-left: 1em;">
+        <img src="images/logos/Phone_icon.png" width="2%" height="2%"><a href="tel:5558675309">555-867-5309</a>
+        <br>
+        <img src="images/logos/Untitled.png" width="2%" height="2%">Email to: <a href="mailto: Ehsan.chowdhury15@student.qcc.cuny.edu">Ehsan Chowdhury/a>
+        <br>
+        <img src="images/logos/Instagram_logo_2016.svg.webp" width="2%" height="2%"><a href="https://www.instagram.com/">Follow us at Instagram</a>
+    </div>
+    <br>
+
+    <hr>
+    <div style="text-align: center;">
+        <a href="Himeji Castle" style="display: inline;">Himeji Castle</a> | 
+        <a href="national sport" style="display: inline;">National sport</a> | 
+        <a href="index.html" style="display: inline;">Contact Us</a>
+        <br>
+        <h3>Project 1 by Ehsan Chowdhury</h3>
+    </div>
+</body>
+</html>
