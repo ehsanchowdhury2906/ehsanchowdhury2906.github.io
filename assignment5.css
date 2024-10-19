@@ -1,1 +1,47 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightpurple; /* Use a color or an image */
+}
+
+.outer-container {
+    background-color: lightpurple; /* Or use background-image */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.clock {
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
+    background-image: url('clock-background.png'); /* Your clock image */
+    background-size: cover;
+    position: relative;
+}
+
+.hour-hand,
+.minute-hand {
+    position: absolute;
+    background-image: url('clock-hand.png'); /* Your clock hand image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 50%;
+    transform-origin: bottom; /* Set rotation point */
+}
+
+.hour-hand {
+    width: 8px; /* Adjust width as needed */
+    height: 70px; /* Adjust height as needed */
+    bottom: 50%;
+    transform: translateX(-50%) rotate(90deg); /* Rotate to desired angle */
+}
+
+.minute-hand {
+    width: 4px; /* Adjust width as needed */
+    height: 90px; /* Adjust height as needed */
+    bottom: 50%;
+    transform: translateX(-50%) rotate(180deg); /* Rotate to desired angle */
+}
 
