@@ -1,47 +1,46 @@
 body {
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: lightpurple; 
-}
-
-.outer-container {
-    background-color: lightpurple; 
-    padding: 20px;
-    border-radius: 10px;
+    background-color: #282c34;
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
 .clock {
-    width: 300px;
-    height: 300px; 
-    background-image: https://png.pngtree.com/png-clipart/20220705/ourmid/pngtree-clock-face-no-hand-roboto-font-png-image_5683165.png
-    background-size: cover;
     position: relative;
+    width: 200px;
+    height: 200px;
+    border: 10px solid white;
+    border-radius: 50%;
+    background: black;
 }
 
-.hour-hand,
-.minute-hand {
+.hand {
     position: absolute;
-    background-image: https://w7.pngwing.com/pngs/517/212/png-transparent-minute-hand-clock-thumbnail.png
-    background-size: contain;
-    background-repeat: no-repeat;
+    background: white;
+    transform-origin: bottom;
+    bottom: 50%;
     left: 50%;
-    transform-origin: bottom; 
+    transform: rotate(90deg);
 }
 
-.hour-hand {
-    width: 8px; 
-    height: 70px; 
-    bottom: 50%;
-    transform: translateX(-50%) rotate(90deg); 
+.hour {
+    width: 6px;
+    height: 50px;
+    margin-left: -3px; /* Half the width */
 }
 
-.minute-hand {
+.minute {
     width: 4px;
-    height: 90px; 
-    bottom: 50%;
-    transform: translateX(-50%) rotate(180deg);
+    height: 70px;
+    margin-left: -2px; /* Half the width */
 }
 
+.second {
+    width: 2px;
+    height: 90px;
+    margin-left: -1px; /* Half the width */
+    background: red;
+}
