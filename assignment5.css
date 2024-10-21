@@ -24,7 +24,7 @@ body {
 .hour-hand,
 .minute-hand {
     position: absolute;
-    background-image:https://w7.pngwing.com/pngs/517/212/png-transparent-minute-hand-clock-thumbnail.png
+    background-image: https://w7.pngwing.com/pngs/517/212/png-transparent-minute-hand-clock-thumbnail.png
     background-size: contain;
     background-repeat: no-repeat;
     left: 50%;
