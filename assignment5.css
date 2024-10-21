@@ -4,19 +4,19 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: lightpurple; /* Use a color or an image */
+    background-color: lightpurple; 
 }
 
 .outer-container {
-    background-color: lightpurple; /* Or use background-image */
+    background-color: lightpurple; 
     padding: 20px;
     border-radius: 10px;
 }
 
 .clock {
-    width: 300px; /* Adjust size as needed */
-    height: 300px; /* Adjust size as needed */
-    background-image: url('clock-background.png'); /* Your clock image */
+    width: 300px;
+    height: 300px; 
+    background-image: url('clock-background.png'); 
     background-size: cover;
     position: relative;
 }
@@ -24,24 +24,24 @@ body {
 .hour-hand,
 .minute-hand {
     position: absolute;
-    background-image: url('clock-hand.png'); /* Your clock hand image */
+    background-image: url('clock-hand.png'); 
     background-size: contain;
     background-repeat: no-repeat;
     left: 50%;
-    transform-origin: bottom; /* Set rotation point */
+    transform-origin: bottom; 
 }
 
 .hour-hand {
-    width: 8px; /* Adjust width as needed */
-    height: 70px; /* Adjust height as needed */
+    width: 8px; 
+    height: 70px; 
     bottom: 50%;
-    transform: translateX(-50%) rotate(90deg); /* Rotate to desired angle */
+    transform: translateX(-50%) rotate(90deg); 
 }
 
 .minute-hand {
-    width: 4px; /* Adjust width as needed */
-    height: 90px; /* Adjust height as needed */
+    width: 4px;
+    height: 90px; 
     bottom: 50%;
-    transform: translateX(-50%) rotate(180deg); /* Rotate to desired angle */
+    transform: translateX(-50%) rotate(180deg);
 }
 
