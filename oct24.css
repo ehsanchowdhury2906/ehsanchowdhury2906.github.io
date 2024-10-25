@@ -1,25 +1,26 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
 .slideshow-container {
     position: relative;
-    max-width: 800px;
+    max-width: 100%;
     margin: auto;
     overflow: hidden;
 }
 
 .slide {
-    display: none;
-    width: 100%;
+    display: none; /* Hide all slides by default */
 }
 
-img {
+.slide img {
     width: 100%;
     height: auto;
 }
@@ -29,20 +30,32 @@ img {
 }
 
 @keyframes fade {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
-/* Automatic slideshow */
-@keyframes slide {
-    0% { display: block; opacity: 1; }
-    20% { display: block; opacity: 1; }
-    25% { opacity: 0; }
-    100% { display: none; }
+/* Show the first slide */
+.slide:nth-child(1) {
+    display: block;
+    animation-delay: 0s;
 }
 
-.slide:nth-child(1) { animation: slide 10s infinite; }
-.slide:nth-child(2) { animation: slide 10s infinite 2s; }
-.slide:nth-child(3) { animation: slide 10s infinite 4s; }
+.slide:nth-child(2) {
+    animation-delay: 5s; /* Delay for the second slide */
+}
 
+.slide:nth-child(3) {
+    animation-delay: 10s; /* Delay for the third slide */
+}
 
+/* Loop through the slides */
+@keyframes slideAnimation {
+    0% { display: block; }
+    33% { display: block; }
+    34% { display: none; }
+    66% { display: none; }
+    67% { display: block; }
+    100% { display: block; }
+}
