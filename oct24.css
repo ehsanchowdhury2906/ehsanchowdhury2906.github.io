@@ -17,7 +17,7 @@ body {
 }
 
 .slide {
-    display: none; /* Hide all slides by default */
+    display: none; 
 }
 
 .slide img {
@@ -36,21 +36,21 @@ body {
     100% { opacity: 0; }
 }
 
-/* Show the first slide */
+
 .slide:nth-child(1) {
     display: block;
     animation-delay: 0s;
 }
 
 .slide:nth-child(2) {
-    animation-delay: 5s; /* Delay for the second slide */
+    animation-delay: 5s; 
 }
 
 .slide:nth-child(3) {
-    animation-delay: 10s; /* Delay for the third slide */
+    animation-delay: 10s; 
 }
 
-/* Loop through the slides */
+
 @keyframes slideAnimation {
     0% { display: block; }
     33% { display: block; }
