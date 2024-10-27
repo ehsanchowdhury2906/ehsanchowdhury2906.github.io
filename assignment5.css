@@ -29,18 +29,18 @@ body {
 .hour {
     width: 6px;
     height: 50px;
-    margin-left: -3px; /* Half the width */
+    margin-left: -3px; 
 }
 
 .minute {
     width: 4px;
     height: 70px;
-    margin-left: -2px; /* Half the width */
+    margin-left: -2px;
 }
 
 .second {
     width: 2px;
     height: 90px;
-    margin-left: -1px; /* Half the width */
+    margin-left: -1px; 
     background: red;
 }
