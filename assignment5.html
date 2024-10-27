@@ -4,7 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analog Clock</title>
-       
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #282c34;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .clock {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 8px solid white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hand {
+            position: absolute;
+            bottom: 50%;
+            background: white;
+            transform-origin: bottom;
+            transition: transform 0.5s ease-in-out;
+        }
+        .hour {
+            width: 6px;
+            height: 50px;
+            z-index: 3;
+        }
+        .minute {
+            width: 4px;
+            height: 70px;
+            z-index: 2;
+        }
+        .second {
+            width: 2px;
+            height: 90px;
+            background: red;
+            z-index: 1;
+        }
+    </style>
 </head>
 <body>
 
@@ -36,4 +79,3 @@
 
 </body>
 </html>
-
