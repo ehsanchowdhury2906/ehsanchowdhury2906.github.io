@@ -29,14 +29,14 @@ body {
     width: 6px;
     height: 50px;
     transform: rotate(90deg); 
-    animation: moveHour 60s linear infinite; 
+    animation: moveHour 10s linear infinite; 
 }
 
 .minute-hand {
     width: 4px;
     height: 70px;
     transform: rotate(0deg);
-    animation: moveMinute 60s linear infinite;
+    animation: moveMinute 10s linear infinite;
 }
 
 @keyframes moveHour {
