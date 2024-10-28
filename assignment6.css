@@ -3,44 +3,57 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #282c34;
-    color: white;
-    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
 }
 
 .clock {
     position: relative;
     width: 200px;
     height: 200px;
-    border: 10px solid white;
+    border: 10px solid #333;
     border-radius: 50%;
-    background: black;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 
 .hand {
     position: absolute;
-    background: white;
-    transform-origin: bottom;
     bottom: 50%;
     left: 50%;
-    transform: rotate(90deg);
+    background: #333;
+    transform-origin: bottom;
 }
 
-.hour {
+.hour-hand {
     width: 6px;
     height: 50px;
-    margin-left: -3px; 
+    transform: rotate(90deg); 
+    animation: moveHour 60s linear infinite; 
 }
 
-.minute {
+.minute-hand {
     width: 4px;
     height: 70px;
-    margin-left: -2px;
+    transform: rotate(0deg);
+    animation: moveMinute 60s linear infinite;
 }
 
-.second {
-    width: 2px;
-    height: 90px;
-    margin-left: -1px; 
-    background: red;
+@keyframes moveHour {
+    0% {
+        transform: rotate(90deg); 
+    }
+    100% {
+        transform: rotate(150deg); 
+    }
 }
+
+@keyframes moveMinute {
+    0% {
+        transform: rotate(0deg); 
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
