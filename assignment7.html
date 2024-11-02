@@ -7,32 +7,17 @@
     <title>Product Modal Example</title>
 </head>
 <body>
-    <button id="openModal">View Product</button>
+    <a href="#productModal" class="openModal">View Product</a>
 
     <div id="productModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <a href="#" class="close">&times;</a>
             <h2>Product Title</h2>
             <p>Description of the product goes here.</p>
             <p>Price: $99.99</p>
         </div>
     </div>
-
-document.getElementById('openModal').onclick = function() {
-    document.getElementById('productModal').style.display = 'block';
-};
-
-document.querySelector('.close').onclick = function() {
-    document.getElementById('productModal').style.display = 'none';
-};
-
-window.onclick = function(event) {
-    if (event.target == document.getElementById('productModal')) {
-        document.getElementById('productModal').style.display = 'none';
-    }
-};
-
-  <script src="script.js"></script>
 </body>
 </html>
+
 
