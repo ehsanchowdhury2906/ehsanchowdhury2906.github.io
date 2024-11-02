@@ -2,10 +2,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
-#openModal {
+.openModal {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    text-decoration: none;
+    color: blue;
 }
 
 .modal {
@@ -18,6 +20,10 @@ body {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.modal:target {
+    display: block; /* Show the modal when targeted */
 }
 
 .modal-content {
@@ -35,7 +41,7 @@ body {
     float: right;
     font-size: 28px;
     font-weight: bold;
-    cursor: pointer;
+    text-decoration: none;
 }
 
 .close:hover,
