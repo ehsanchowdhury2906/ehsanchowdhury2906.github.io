@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Modal Example</title>
+</head>
+<body>
+    <button id="openModal">View Product</button>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Product Title</h2>
+            <p>Description of the product goes here.</p>
+            <p>Price: $99.99</p>
+        </div>
+    </div>
+
+document.getElementById('openModal').onclick = function() {
+    document.getElementById('productModal').style.display = 'block';
+};
+
+document.querySelector('.close').onclick = function() {
+    document.getElementById('productModal').style.display = 'none';
+};
+
+window.onclick = function(event) {
+    if (event.target == document.getElementById('productModal')) {
+        document.getElementById('productModal').style.display = 'none';
+    }
+};
+
+  <script src="script.js"></script>
+</body>
+</html>
 
