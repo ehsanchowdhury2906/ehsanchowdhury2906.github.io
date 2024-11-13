@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header with Icon -->
+    <div class="header">
+        <div class="icon"></div>
+    </div>
+
+    <!-- Main Textbox (Sales Page Description) -->
+    <div class="textbox">
+        <h2>Special Holiday Sale</h2>
+        <p>Get exclusive deals on our premium products! Limited time only.</p>
+    </div>
+
+    <!-- Product Section -->
+    <div class="product-section">
+        <!-- Single Product 1 -->
+        <div class="product">
+            <img src="https://via.placeholder.com/200x150" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$49.99</p>
+            <button class="btn-add-to-bag" onclick="showModal()">ADD TO BAG</button>
+        </div>
+        <!-- Single Product 2 -->
+        <div class="product">
+            <img src="https://via.placeholder.com/200x150" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>$39.99</p>
+            <button class="btn-add-to-bag" onclick="showModal()">ADD TO BAG</button>
+        </div>
+        <!-- Single Product 3 -->
+        <div class="product">
+            <img src="https://via.placeholder.com/200x150" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>$59.99</p>
+            <button class="btn-add-to-bag" onclick="showModal()">ADD TO BAG</button>
+        </div>
+    </div>
+
+    <!-- Modal Window -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2>Item Added to Bag</h2>
+            <button class="btn-close" onclick="closeModal()">X</button>
+            <button class="btn-continue-shopping" onclick="closeModal()">CONTINUE SHOPPING</button>
+        </div>
+    </div>
+
+    <script>
+        // Modal functionality
+        function showModal() {
+            document.getElementById('modal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
 
