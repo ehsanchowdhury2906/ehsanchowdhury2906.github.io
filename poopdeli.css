@@ -1,1 +1,148 @@
+/* General Body Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: red;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section with Icon */
+.header {
+    position: relative;
+    padding: 20px;
+}
+
+.icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    animation: spin 2s infinite linear;
+}
+
+.icon:hover {
+    animation-play-state: paused;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Main Sales Page Textbox */
+.textbox {
+    margin: 50px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+/* Product Section */
+.product-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+/* Individual Product Styling */
+.product {
+    width: 200px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* Product Image Styling */
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Button Styling */
+.btn-add-to-bag {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+/* Hover Effect on Add to Bag Button */
+.btn-add-to-bag:hover {
+    background-color: gray;
+}
+
+/* Tooltip for Add to Cart */
+.btn-add-to-bag::after {
+    content: "Add to Shopping Cart";
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.btn-add-to-bag:hover::after {
+    opacity: 1;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+/* Close and Continue Shopping Buttons in Modal */
+.modal-content .btn-close {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.modal-content .btn-continue-shopping {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
 
