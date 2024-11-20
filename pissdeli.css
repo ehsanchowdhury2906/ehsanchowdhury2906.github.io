@@ -40,10 +40,17 @@ h1 {
 p {
     color: #555;
     font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
 /* Image section */
+.image-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .image-section img {
+    max-width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -65,19 +72,30 @@ p {
 }
 
 /* Thumbnail section */
-.row.mt-4 .col-md-4 img {
+.thumbnail-section {
+    margin-top: 30px;
+}
+
+.thumbnail-section .col-md-4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.thumbnail-section img {
     border-radius: 5px;
-    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-.row.mt-4 .col-md-4 h4 {
+.thumbnail-section h4 {
     color: #007bff;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
 
-.row.mt-4 .col-md-4 p {
+.thumbnail-section p {
     color: #666;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
