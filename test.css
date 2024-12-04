@@ -1,1 +1,10 @@
-
+.card {
+  cursor: pointer;
+}
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+.modal-header {
+  justify-content: space-between;
+}
