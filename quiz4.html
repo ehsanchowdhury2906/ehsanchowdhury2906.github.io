@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Evening Message</title>
+    <link rel="stylesheet" href="quiz4.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Interactive Block</h1>
+        <button onclick="displayMessage()">Click Me</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function displayMessage() {
+            const messageElement = document.getElementById("message");
+            messageElement.textContent = "Good evening! Your Name";
+        }
+    </script>
+</body>
+</html>
 
