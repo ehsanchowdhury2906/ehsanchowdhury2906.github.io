@@ -134,64 +134,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ball Animation</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
-
-        .container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-
-        .ball {
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            background-size: cover;
-            animation: bounce 2s infinite;
-        }
-
-        @keyframes bounce {
-            0%, 100% {
-                transform: translate(0, 0) scale(1);
-            }
-            25% {
-                transform: translate(200px, -200px) scale(1.2);
-            }
-            50% {
-                transform: translate(400px, 0) scale(1);
-            }
-            75% {
-                transform: translate(200px, 200px) scale(0.8);
-            }
-        }
-
-        @keyframes changeImage {
-            0%, 100% {
-                background-image: url("bk.png");
-            }
-            25%, 75% {
-                background-image: url("football.jfif");
-            }
-        }
-
-        .ball {
-            animation: bounce 2s infinite, changeImage 2s infinite;
-        }
-    </style>
+    <title>Basketball to Football Animation</title>
+    <link rel="stylesheet" href="final.css">
 </head>
 <body>
     <div class="container">
-        <div class="ball"></div>
+        <img id="basketball" src="bk.png" alt="Basketball">
+        <img id="football" src="football.jfif" alt="Football">
     </div>
 </body>
 </html>
