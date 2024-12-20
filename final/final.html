@@ -201,102 +201,83 @@
 
  <p>Q13</p>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Flexbox Layout</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .flexbox {
-            display: flex;
-            gap: 20px;
-            padding: 20px;
-            background: linear-gradient(to bottom, #ffe2f1, #fff1fa);
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .flex-item {
-            border: 2px solid #ffdee2;
-            border-radius: 15px;
-            padding: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-            text-align: center;
-            background-color: #fff;
-        }
-
-        .flex-item h2 {
-            font-size: 1.5rem;
-            color: #333;
-            margin-bottom: 15px;
-        }
-
-        .flex-item img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-
-        .flex-item p {
-            font-size: 0.9rem;
-            font-weight: bold;
-            color: #d63384;
-            background-color: #ffbfd2;
-            padding: 8px 12px;
-            border-radius: 5px;
-            display: inline-block;
-        }
-
-        .flex-item1 {
-            align-self: flex-start;
-            width: 20%;
-        }
-
-        .flex-item2 {
-            align-self: center;
-            width: 30%;
-        }
-
-        .flex-item3 {
-            align-self: flex-start;
-            width: 40%;
-        }
-    </style>
-</head>
-<body>
-    <div class="flexbox">
-        <div class="flex-item1 flex-item">
-            <h2>Title 1</h2>
-            <img src="bk.png" alt="Basketball 1">
-            <p>basketball-1</p>
-        </div>
-        <div class="flex-item2 flex-item">
-            <h2>Title 2</h2>
-            <img src="football.jfif" alt="Football">
-            <p>basketball-2</p>
-        </div>
-        <div class="flex-item3 flex-item">
-            <h2>Title 3</h2>
-            <img src="bk.png" alt="Basketball 3">
-            <p>basketball-3</p>
-        </div>
+<p>Q13</p>
+<div class="flexbox">
+    <div class="flex-item1 flex-item">
+        <h2>Title 1</h2>
+        <img src="bk.png" alt="Basketball 1">
+        <p>basketball-1</p>
     </div>
-</body>
-</html>
+    <div class="flex-item2 flex-item">
+        <h2>Title 2</h2>
+        <img src="football.jfif" alt="Football">
+        <p>basketball-2</p>
+    </div>
+    <div class="flex-item3 flex-item">
+        <h2>Title 3</h2>
+        <img src="bk.png" alt="Basketball 3">
+        <p>basketball-3</p>
+    </div>
+</div>
 
+<style>
+    .flexbox {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        background: linear-gradient(to bottom, #ffe2f1, #fff1fa);
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        justify-content: space-between;
+    }
 
+    .flex-item {
+        border: 2px solid #ffdee2;
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        background-color: #fff;
+        width: 100%; /* Ensures responsiveness */
+    }
+
+    .flex-item h2 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .flex-item img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .flex-item p {
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: #d63384;
+        background-color: #ffbfd2;
+        padding: 8px 12px;
+        border-radius: 5px;
+        display: inline-block;
+    }
+
+    .flex-item1 {
+        align-self: flex-start;
+        width: 20%;
+    }
+
+    .flex-item2 {
+        align-self: center;
+        width: 30%;
+    }
+
+    .flex-item3 {
+        align-self: flex-start;
+        width: 40%;
+    }
+</style>
 
 </div>
 
