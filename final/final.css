@@ -1,0 +1,35 @@
+body {
+  background-color: #fdf5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  border: 2px solid #ff007f;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(255, 165, 0, 0.5);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  border-radius: 5px;
+}
+
+.btn-custom {
+  background-color: #ff80b3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.btn-custom:hover {
+  background-color: #ff4d94;
+}
