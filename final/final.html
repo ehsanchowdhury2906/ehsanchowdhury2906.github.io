@@ -204,123 +204,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive 3 by 1 Layout</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fdf5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-        .card {
-            border: 2px solid #ffdee2;
-            border-radius: 15px;
-            padding: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 330px; 
-            width: 220px;
-            margin: 0 auto;
-        }
+    .card {
+      border: 2px solid #ff007f;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(255, 165, 0, 0.5);
+      transition: transform 0.2s;
+    }
 
-        .card:nth-child(2) {
-            height: 360px; 
-            width: 240px;
-        }
+    .card:hover {
+      transform: scale(1.05);
+    }
 
-        .card:nth-child(3) {
-            height: 400px; 
-            width: 260px;
-        }
+    .card img {
+      border-radius: 5px;
+    }
 
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        }
+    .btn-custom {
+      background-color: #ff80b3;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 5px 10px;
+      font-weight: bold;
+    }
 
-        .title {
-            font-size: 1.25rem;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        .product-img {
-            max-width: 150px; 
-            max-height: 120px;
-            margin-bottom: 10px;
-        }
-
-        .card:nth-child(2) .product-img {
-            max-width: 170px;
-            max-height: 130px;
-        }
-
-        .card:nth-child(3) .product-img {
-            max-width: 190px; 
-            max-height: 150px;
-        }
-
-        .btn-custom {
-            background-color: #ffbfd2;
-            border: none;
-            color: #d63384;
-            padding: 10px 20px;
-            font-size: 0.9rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .btn-custom:hover {
-            background-color: #ffa6bf;
-        }
-
-        .card-container {
-            background: linear-gradient(to bottom, #ffe2f1, #fff1fa);
-            border-radius: 20px;
-            padding: 20px;
-        }
-
-        .row {
-            justify-content: center;
-        }
-
-        .col {
-            margin-bottom: 20px;
-        }
-    </style>
+    .btn-custom:hover {
+      background-color: #ff4d94;
+    }
+  </style>
 </head>
 <body>
-<div class="container my-5">
-    <div class="row row-cols-1 row-cols-md-3 g-5">
-       
-        <div class="col d-flex justify-content-center">
-            <div class="card card-container">
-                <div class="title">Title 1</div>
-                <img src="bk.png" alt="Basketball" class="product-img">
-                <button class="btn btn-custom">basketball-1</button>
-            </div>
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <!-- Card 1 -->
+      <div class="col-md-3">
+        <div class="card text-center p-3">
+          <h5 class="card-title">Title 1</h5>
+          <img src="bk.png" class="img-fluid" alt="Basketball Image 1">
+          <button class="btn btn-custom mt-2">basketball-1</button>
         </div>
-       
-        <div class="col d-flex justify-content-center">
-            <div class="card card-container">
-                <div class="title">Title 2</div>
-                <img src="football.jfif" alt="Football" class="product-img">
-                <button class="btn btn-custom">basketball-2</button>
-            </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card text-center p-3">
+          <h5 class="card-title">Title 2</h5>
+          <img src="football.jfif" class="img-fluid" alt="Football Image">
+          <button class="btn btn-custom mt-2">basketball-2</button>
         </div>
-      
-        <div class="col d-flex justify-content-center">
-            <div class="card card-container">
-                <div class="title">Title 3</div>
-                <img src="bk.png" alt="Basketball" class="product-img">
-                <button class="btn btn-custom">basketball-3</button>
-            </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-5">
+        <div class="card text-center p-3">
+          <h5 class="card-title">Title 3</h5>
+          <img src="bk.png" class="img-fluid" alt="Basketball Image 2">
+          <button class="btn btn-custom mt-2">basketball-3</button>
         </div>
+      </div>
     </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
