@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#basketball,
+#football {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    animation: bounce 3s infinite;
+}
+
+#football {
+    display: none;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-300px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-300px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes switchImages {
+    0%, 50% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
