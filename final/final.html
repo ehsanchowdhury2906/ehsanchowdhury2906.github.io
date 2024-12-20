@@ -88,12 +88,11 @@
         <p>Q8: CD</p>
         <p>Q9: C</p>
         <p>Q10: D</p>
-        <p>Q11: -</p>
-        <p>Q12</p>
-        <p>Q13</p>
+       
+        
     </div>
 
-    
+     <p>Q11</p>
     <div class="hero-section">
         <div class="studio-text">Studio</div>
         <div class="burger-menu" onclick="toggleTabs()">&#9776;</div>
@@ -111,7 +110,7 @@
         </div>
     </div>
 
-    
+     <p>Q12</p>
     <div class="container">
         <img id="basketball" src="bk.png" alt="Basketball" width="100">
         <img id="football" src="football.jfif" alt="Football" width="100">
@@ -126,3 +125,72 @@
     </script>
 </body>
 </html>
+
+</div>
+
+ <p>Q13</p>
+<div class="container">
+    <img id="basketball" src="bk.png" alt="Basketball" width="100">
+    <img id="football" src="football.jfif" alt="Football" width="100">
+</div>
+
+<style>
+    .container {
+        position: relative;
+        height: 300px;
+        width: 100%;
+        margin-top: 50px;
+        overflow: hidden;
+    }
+    #basketball, #football {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: moveBall 5s infinite alternate;
+    }
+    #football {
+        display: none;
+    }
+
+    @keyframes moveBall {
+        0% {
+            bottom: 0;
+            transform: translateX(-50%) scale(1);
+        }
+        25% {
+            bottom: 150px;
+            transform: translateX(-50%) scale(1.2);
+        }
+        50% {
+            bottom: 300px;
+            transform: translateX(-50%) scale(1.4);
+        }
+        75% {
+            bottom: 150px;
+            transform: translateX(-50%) scale(1.2);
+        }
+        100% {
+            bottom: 0;
+            transform: translateX(-50%) scale(1);
+        }
+    }
+</style>
+
+<script>
+    const basketball = document.getElementById('basketball');
+    const football = document.getElementById('football');
+
+    basketball.addEventListener('animationiteration', () => {
+        basketball.style.display = 'none';
+        football.style.display = 'block';
+        football.style.animation = 'moveBall 5s infinite alternate';
+    });
+
+    football.addEventListener('animationiteration', () => {
+        football.style.display = 'none';
+        basketball.style.display = 'block';
+        basketball.style.animation = 'moveBall 5s infinite alternate';
+    });
+</script>
+
